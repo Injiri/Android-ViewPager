@@ -32,13 +32,18 @@ class CustomPagerAdapter extends PagerAdapter {
     }
 
     @Override
+    public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
+        container.removeView((View) object);
+    }
+
+    @Override
     public int getCount() {
         return PagerEnum.values().length;
     }
 
     @Override
     public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
-        return false;
+        return view == object;
     }
 
     @Nullable

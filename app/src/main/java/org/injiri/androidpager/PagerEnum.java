@@ -23,6 +23,7 @@ public enum PagerEnum {
         this.titleResId = titleResId;
     }
 
+
     public int getLayoutResId() {
         return layoutResId;
     }
