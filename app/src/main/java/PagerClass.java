@@ -66,7 +66,7 @@ public class PagerClass extends PagerAdapter {
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        return "View" +(position+1);
+        return "View" + (position + 1);
     }
 }
 
